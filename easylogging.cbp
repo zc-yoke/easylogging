@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="easylogging" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="libeasylogging++.a">
+				<Option output="easylogging" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+			</Target>
+			<Target title="libshareLog.a">
+				<Option output="shareLog" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add directory="${PROJECT_DIR}" />
+				</Compiler>
+				<Linker>
+					<Add option="-leasylogging" />
+					<Add directory="${PROJECT_DIR}" />
+				</Linker>
+			</Target>
+			<Target title="libstudent.a">
+				<Option output="student" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add directory="${PROJECT_DIR}" />
+				</Compiler>
+				<Linker>
+					<Add option="-leasylogging" />
+					<Add option="-lshareLog" />
+					<Add directory="${PROJECT_DIR}" />
+				</Linker>
+			</Target>
+			<Target title="libteacher.a">
+				<Option output="teacher" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add directory="${PROJECT_DIR}" />
+				</Compiler>
+				<Linker>
+					<Add option="-leasylogging" />
+					<Add option="-lshareLog" />
+					<Add directory="${PROJECT_DIR}" />
+				</Linker>
+			</Target>
+			<Target title="testShareLog.exe">
+				<Option output="testShareLog" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add directory="${PROJECT_DIR}" />
+				</Compiler>
+				<Linker>
+					<Add option="-leasylogging" />
+					<Add option="-lshareLog" />
+					<Add option="-lstudent" />
+					<Add option="-lteacher" />
+					<Add directory="${PROJECT_DIR}" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="all" targets="libeasylogging++.a;libshareLog.a;libstudent.a;libteacher.a;testShareLog.exe;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="easylogging++.cc">
+			<Option target="libeasylogging++.a" />
+		</Unit>
+		<Unit filename="easylogging++.h">
+			<Option target="libeasylogging++.a" />
+		</Unit>
+		<Unit filename="shareLog.cpp">
+			<Option target="libshareLog.a" />
+		</Unit>
+		<Unit filename="shareLog.h">
+			<Option target="libshareLog.a" />
+		</Unit>
+		<Unit filename="student.cpp">
+			<Option target="libstudent.a" />
+		</Unit>
+		<Unit filename="student.h">
+			<Option target="libstudent.a" />
+		</Unit>
+		<Unit filename="teacher.cpp">
+			<Option target="libteacher.a" />
+		</Unit>
+		<Unit filename="teacher.h">
+			<Option target="libteacher.a" />
+		</Unit>
+		<Unit filename="testShareLog.cpp">
+			<Option target="testShareLog.exe" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

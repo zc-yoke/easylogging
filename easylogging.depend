@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1543005332 source:e:\000_coding\000_soft_develop_lib\easylogging\easylogging++.cc
+	"easylogging++.h"
+
+1543005332 e:\000_coding\000_soft_develop_lib\easylogging\easylogging++.h
+	<cstddef>
+	<syslog.h>
+	<ctime>
+	<cstring>
+	<cstdlib>
+	<cctype>
+	<cwchar>
+	<csignal>
+	<cerrno>
+	<cstdarg>
+	<locale>
+	<codecvt>
+	<cxxabi.h>
+	<execinfo.h>
+	<sys/system_properties.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<direct.h>
+	<windows.h>
+	<winsock2.h>
+	<winsock.h>
+	<string>
+	<vector>
+	<map>
+	<unordered_map>
+	<utility>
+	<functional>
+	<algorithm>
+	<fstream>
+	<iostream>
+	<sstream>
+	<memory>
+	<type_traits>
+	<mutex>
+	<thread>
+	<pthread.h>
+	<unistd.h>
+	<thread>
+	<queue>
+	<condition_variable>
+	<list>
+	<queue>
+	<deque>
+	<set>
+	<bitset>
+	<stack>
+	<array>
+	<unordered_set>
+	<QString>
+	<QByteArray>
+	<QVector>
+	<QList>
+	<QPair>
+	<QMap>
+	<QQueue>
+	<QSet>
+	<QLinkedList>
+	<QHash>
+	<QMultiHash>
+	<QStack>
+	<boost/container/vector.hpp>
+	<boost/container/stable_vector.hpp>
+	<boost/container/list.hpp>
+	<boost/container/deque.hpp>
+	<boost/container/map.hpp>
+	<boost/container/flat_map.hpp>
+	<boost/container/set.hpp>
+	<boost/container/flat_set.hpp>
+	<wx/vector.h>
+
+1554602216 source:e:\000_coding\000_soft_develop_lib\easylogging\sharelog.cpp
+	"shareLog.h"
+
+1554600432 e:\000_coding\000_soft_develop_lib\easylogging\sharelog.h
+	"easylogging++.h"
+
+1554521442 source:e:\000_coding\000_soft_develop_lib\easylogging\main.cpp
+	<iostream>
+	"student.h"
+
+1554602780 e:\000_coding\000_soft_develop_lib\easylogging\student.h
+	"shareLog.h"
+
+1554602763 source:e:\000_coding\000_soft_develop_lib\easylogging\student.cpp
+	"student.h"
+
+1554554895 source:e:\000_coding\000_soft_develop_lib\easylogging\teacher.cpp
+	"teacher.h"
+
+1554554662 e:\000_coding\000_soft_develop_lib\easylogging\teacher.h
+	"shareLog.h"
+
+1554596274 source:e:\000_coding\000_soft_develop_lib\easylogging\testsharelog.cpp
+	<iostream>
+	"student.h"
+	"shareLog.h"
+	"teacher.h"
+
